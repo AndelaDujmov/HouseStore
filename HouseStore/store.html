@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Store</title>
+    <meta charset=”UTF-8”>
+    <meta name=”viewport” content=”width=device-width, initial- scale=1.0”>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+        #parent{
+            font-family: 'Montserrat', sans-serif;
+            border: 2px solid gray;
+        }
+
+        #container{
+            background-color: #ffa;
+            text-align: center;
+        }
+
+        header, #parent {
+            background-color: beige;
+            width: 90%;
+            margin: 0 auto;
+            box-shadow: 2px 2px #eee;
+            text-align: center;
+        }
+
+        header p{
+            color: red;
+            font-size: 1.3em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+
+        header p, h1{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        header h1{
+            font-size: 2em;
+        }
+
+        h1, h2{
+            font-size: 1.5em;
+        }
+
+        .image{
+            height: 350px;
+            width: 40%;
+        }
+
+        .child{
+            padding-top: 22px;
+        }
+
+        span{
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <header>
+            <p>For Sale</p>
+            <h1>Use Promo code <span>20percent</span> to get 20% off your first sale!</h1>
+        </header>
+    </div>
+    <div id="parent">
+
+        <div class="child">
+            <a href="page1.html"><img class="image" src="https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/TypesOfHomes/types-of-homes-hero.jpg"></a>
+            <h1>123 St Andrews Cross</h1>
+            <h2>$900,000</h2>
+        </div>
+        <div class="child">
+            <a href="page2.html"><img class="image" src="https://images.adsttc.com/media/images/5efe/1f7f/b357/6540/5400/01d7/newsletter/archdaily-houses-104.jpg?1593712501"></a>
+            <h1>129 Maple Ave South</h1>
+            <h2>$699,000</h2>
+        </div>
+        <div class="child">
+            <a href="page3.html"><img class="image" src="https://cdn.vox-cdn.com/thumbor/dJczORmO_lGRiUr2UrsJynvoALw=/0x0:4000x1978/1200x800/filters:focal(0x0:4000x1978)/cdn.vox-cdn.com/uploads/chorus_asset/file/23900957/0322_NB_Idea_House_Mountain_Modern_Preview_Screen_Shot_2022_03_29_at_11.42.36_AM.jpg"></a>
+            <h1>500 Mary Janes Path</h1>
+            <h2>$876,000</h2>
+        </div>
+        <div class="child">
+            <a href="page4.html"><img class="image" src="https://res.cloudinary.com/brickandbatten/images/w_2560,h_1145/v1641000215/wordpress_assets/25575-ModSplitLevel-ChelseaGray-Revere-a-ok/25575-ModSplitLevel-ChelseaGray-Revere-a-ok.jpg?_i=AA"></a>
+            <h1>56 Califoria Street</h1>
+            <h2>$499,000</h2>
+        </div>
+    </div>
+</body>
+</html>
