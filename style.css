@@ -1,0 +1,30 @@
+ #parent{
+            font-family: 'Montserrat', sans-serif;
+            border: 2px solid gray;
+        }
+
+#container{
+    background-color: #ffa;
+    text-align: center;
+}
+
+header, #parent {
+    background-color: beige;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 2px 2px #eee;
+    text-align: center;
+}
+
+header p{
+    color: red;
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+header p, h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

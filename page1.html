@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Store</title>
+        <meta charset=”UTF-8”>
+        <meta name=”viewport” content=”width=device-width, initial- scale=1.0”>
+        <meta http-equiv=”X-UA-Compatible” content=”ie=edge”>
+        <style>
+         #parent{
+            font-family: 'Montserrat', sans-serif;
+
+        }
+        #container{
+            background-color: #ffa;
+            text-align: center;
+        }
+
+        header, #parent {
+            background-color: beige;
+            width: 90%;
+            margin: 0 auto;
+            box-shadow: 2px 2px #eee;
+            text-align: center;
+        }
+
+        #parent img{
+            width:50%;
+        }
+
+        #thumbs img {
+            width: 20%;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            opacity: 0.33;
+            box-shadow: 3px 3px #ccc
+        }
+
+
+        #thumbs img:hover{
+            opacity: 1.2;
+            transition: all 0.5s;
+            transition-delay: 0.1s;
+            transform: rotate(0deg) scale(1.2, 1.2);
+        }
+
+        header p{
+            color: red;
+            font-size: 1.3em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        </style>
+
+        <script>
+            window.onload = function () {
+            const images = document.getElementsByTagName("img");
+            for (var x = 0; x <= images.length; x++) {
+                images[x].addEventListener('click', function () {
+                let loc = this.src;
+                document.getElementById('image').src = loc;
+            });
+            }
+            }
+        </script>
+
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <p>For Sale</p>
+                <h1>Use Promo code <span>20percent</span> to get 20% off your first sale!</h1>
+            </header>
+        </div>
+        <div id="parent">
+
+            <div class="child">
+                <img id="image" src="https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/TypesOfHomes/types-of-homes-hero.jpg">
+                <h1>123 St Andrews Cross</h1>
+                <h2>Los Angeles, CT 06880</h2>
+                <h2>$900,000</h2>
+            </div>
+        </div>
+        <div id="thumbs">
+            <img src="https://www.mydomaine.com/thmb/KWYFPjZMCuhABZNIM5F-o-eiwlM=/735x0/cdn.cliqueinc.com__cache__posts__212361__-2030968-1483470364.700x0c-8571e60cad7b42a981ab29ae10b5c153-1c3248487c784cd2994c5a3ba02f7115.jpg">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/edc020122velez-002-1639082474.jpg">
+            <img src="https://media.designcafe.com/wp-content/uploads/2021/09/27095756/bedroom-design-with-window-bay-seating.jpg">
+            <img src="https://www.realsimple.com/thmb/v-RxRg1ce8vHcRP9UFFW-TVf4jY=/2000x1125/smart/filters:no_upscale():focal(1059x764:1061x766)/timeless-kitchen-1-2000-60ae3b5f812f4cf1aa11bd8e4cafb560.jpg">
+        </div>
+
+    </body>
+</html>
