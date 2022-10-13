@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Store</title>
+    <meta charset=”UTF-8”>
+    <meta name=”viewport” content=”width=device-width, initial- scale=1.0”>
+    <style>
+         #parent{
+            font-family: 'Montserrat', sans-serif;
+
+        }
+        #container{
+            background-color: #ffa;
+            text-align: center;
+        }
+
+        header, #parent {
+            background-color: beige;
+            width: 90%;
+            margin: 0 auto;
+            box-shadow: 2px 2px #eee;
+            text-align: center;
+        }
+
+        #parent img{
+            width:50%;
+        }
+
+        #thumbs img {
+            width: 20%;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            opacity: 0.33;
+            box-shadow: 3px 3px #ccc
+        }
+
+
+        #thumbs img:hover{
+            opacity: 1.2;
+            transition: all 0.5s;
+            transition-delay: 0.1s;
+            transform: rotate(0deg) scale(1.2, 1.2);
+        }
+
+        header p{
+            color: red;
+            font-size: 1.3em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+         #nav ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              border: 1px solid black;
+              height: 30px;
+              padding-top: 10px;
+            }
+
+        #nav li{
+            display: inline;
+            padding-left: 22px;
+        }
+
+
+        #nav button{
+            background-color: grey;
+            color: white;
+            border: 1px solid black;
+            width: 80px;
+            height: 26px;
+            box-shadow: 1px 1px #eee;
+        }
+
+        #nav input{
+            background: rgb(200,200,200);
+            color: black;
+            border-radius: 3%;
+            box-shadow: 1px 1px #eee;
+        }
+
+        #nav{
+            background-color: grey;
+            color: white;
+            position: sticky;
+   }
+        </style>
+
+
+    <script>
+            window.onload = function () {
+            const images = document.getElementsByTagName("img");
+            for (var x = 0; x <= images.length; x++) {
+                images[x].addEventListener('click', function () {
+                let loc = this.src;
+                document.getElementById('image').src = loc;
+            });
+            }
+            }
+        </script>
+</head>
+<body>
+<div id="nav">
+    <ul>
+        <li>Home</li>
+        <li>News</li>
+        <li>Contact</li>
+        <li>About</li>
+        <li>
+
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit">Search</button>
+
+        </li>
+    </ul>
+</div>
+
+<div id="container">
+    <header>
+        <p>For Sale</p>
+        <h1>Use Promo code <span>20percent</span> to get 20% off your first sale!</h1>
+    </header>
+</div>
+<div id="parent">
+
+    <div class="child">
+        <img class="image" src="https://images.adsttc.com/media/images/5efe/1f7f/b357/6540/5400/01d7/newsletter/archdaily-houses-104.jpg?1593712501">
+        <h1>129 Maple Ave South</h1>
+        <h2>Westport, CT 06880</h2>
+        <h2>$699,000</h2>
+    </div>
+    <div id="thumbs">
+        <img src="https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/2/2021/02/14115918/cover-2-3.png"/>
+        <img src="https://www.mydomaine.com/thmb/KWYFPjZMCuhABZNIM5F-o-eiwlM=/735x0/cdn.cliqueinc.com__cache__posts__212361__-2030968-1483470364.700x0c-8571e60cad7b42a981ab29ae10b5c153-1c3248487c784cd2994c5a3ba02f7115.jpg"/>
+        <img src="https://amazingarchitecture.com/storage/1019/bedroom-minimalism.jpg"/>
+        <img src="https://cf.ltkcdn.net/interiordesign/images/orig/273067-1600x1066-basics-contemporary-kitchen-design.jpg"/>
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/small-balcony-ideas-hbx060117greene10-copy-2-1650312380.jpg?crop=0.883xw:1.00xh;0.0833xw,0&resize=640:*"/>
+    </div>
+</div>
+</body>
+</html>
