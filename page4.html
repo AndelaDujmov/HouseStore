@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Store</title>
+    <meta charset=”UTF-8”>
+    <meta name=”viewport” content=”width=device-width, initial- scale=1.0”>
+    <meta http-equiv=”X-UA-Compatible” content=”ie=edge”>
+    <style>
+         #parent{
+            font-family: 'Montserrat', sans-serif;
+
+        }
+        #container{
+            background-color: #ffa;
+            text-align: center;
+        }
+
+        header, #parent {
+            background-color: beige;
+            width: 90%;
+            margin: 0 auto;
+            box-shadow: 2px 2px #eee;
+            text-align: center;
+        }
+
+        #parent img{
+            width:60%;
+        }
+
+        #thumb img {
+            width: 25%;
+            height: 100px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            opacity: 0.33;
+            box-shadow: 3px 3px #ccc
+        }
+
+
+        #thumb img:hover{
+            opacity: 1.2;
+            transition: all 0.5s;
+            transition-delay: 0.1s;
+            transform: rotate(0deg) scale(1.2, 1.2);
+        }
+
+        header p{
+            color: red;
+            font-size: 1.3em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+          #nav{
+            background-color: grey;
+            color: white;
+            position: sticky;
+   }
+            #nav ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              border: 1px solid black;
+              height: 30px;
+              padding-top: 10px;
+            }
+
+        #nav li{
+            display: inline;
+            padding-left: 22px;
+        }
+
+
+        #nav button{
+            background-color: grey;
+            color: white;
+            border: 1px solid black;
+            width: 80px;
+            height: 26px;
+            box-shadow: 1px 1px #eee;
+        }
+
+        #nav input{
+            background: rgb(200,200,200);
+            color: black;
+            border-radius: 3%;
+            box-shadow: 1px 1px #eee;
+        }
+
+
+    </style>
+
+    <script>
+        window.onload = function(){
+            const imageList =    document.getElementsByTagName("img");
+
+            for(i=0; i<=imageList.length; i++){
+                imageList[i].addEventListener('click',
+                                 function(){
+                                   let number = this.src;
+                                   document.getElementById('image').src = number;
+                                 });
+              }
+            }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div id="nav">
+        <ul>
+            <li>Home</li>
+            <li>News</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>
+
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Search</button>
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div id="container">
+    <header>
+        <p>For Sale</p>
+        <h1>Use Promo code <span>20percent</span> to get 20% off your first sale!</h1>
+    </header>
+</div>
+<div id="parent">
+
+    <div class="child">
+        <a href="page4.html"><img class="pict" src="https://res.cloudinary.com/brickandbatten/images/w_2560,h_1145/v1641000215/wordpress_assets/25575-ModSplitLevel-ChelseaGray-Revere-a-ok/25575-ModSplitLevel-ChelseaGray-Revere-a-ok.jpg?_i=AA"></a>
+        <h1>56 Califoria Street</h1>
+        <h2>Colorado, CT 06880</h2>
+        <h2>$499,000</h2>
+    </div>
+    <div id="thumb">
+        <img src="https://www.thespruce.com/thmb/8icpGCCY7xMYNzZ53LjC_-GGJQk=/2048x1365/filters:fill(auto,1)/contemporary-bedroom-design-ideas-350639-hero-9865f3b1c02b4f8d9a3c782b4e678676.jpg">
+        <img src="https://images.livspace-cdn.com/plain/https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/3/2020/09/15125419/Cover-2.jpg">
+        <img src="https://static.toiimg.com/photo/msid-83204205/83204205.jpg">
+        <img src="https://i.pinimg.com/564x/f2/98/55/f29855d98e23fc0281185fb8c9b8e1ef.jpg">
+    </div>
+</div>
+</body>
+</html>
